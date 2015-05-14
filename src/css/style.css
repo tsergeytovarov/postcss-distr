@@ -60,3 +60,8 @@ body{
 .far{
   font-size: 55px;
 }
+
+/* размеры */
+.block{
+  size: 20px 40px;
+}
