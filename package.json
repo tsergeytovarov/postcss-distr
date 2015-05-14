@@ -5,6 +5,8 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "load-grunt-tasks": "^3.0.0",
-    "grunt-postcss": "^0.4.0"
+    "grunt-postcss": "^0.4.0",
+
+    "autoprefixer-core": "^5.1.11"
   }
 }

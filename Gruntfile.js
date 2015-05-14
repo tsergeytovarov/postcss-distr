@@ -8,15 +8,19 @@
 
 module.exports = function(grunt) {
 
+  // вызываем все таски стандартные
   require('load-grunt-tasks')(grunt);
+
+  // обзываем автопрефиксер переменной
+  var autoprefixer = require('autoprefixer-core');
+
   grunt.initConfig({
 
     postcss: {
       options: {
         map: true,
         processors: [
-          require('autoprefixer-core')({browsers: 'last 10 version'}).postcss,
-          require('csswring').postcss
+          autoprefixer({browsers: 'last 10 version'}).postcss //вызов автопрефиксера над css файлом
         ]
       },
       dist: {
