@@ -1,71 +1,74 @@
 /* переменные */
 
-.container{
+.container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 200px;
   margin: 0 auto;
   padding: 100px;
-  background: #000;
+  width: 200px;
+  background: #000000;
 }
 
 /* циклы */
-.b-1{
+.b-1 {
   width: 1;
 }
-.b-2{
+.b-2 {
   width: 2;
 }
-.b-3{
+.b-3 {
   width: 3;
 }
 
 /* вложенности */
 
-.post .blog{
+.post .blog {
   font-weight: 400;
 }
 
 /* условия */
 
 .foo {
-  background: green
+  background: green;
 }
 
 /* миксины */
-.icon.is-twitter{
-  color: blue;
+.icon.is-twitter {
   background: url(twt.png);
+  color: blue;
+
   backgroun-position: 100%;
 }
-.icon.is-twitter:hover{
-  color: white;
+.icon.is-twitter:hover {
   background: blue;
+  color: white;
 }
-.icon.is-youtube{
-  color: red;
+.icon.is-youtube {
   background: url(youtube.png);
+  color: red;
+
   backgroun-position: 100%;
 }
-.icon.is-youtube:hover{
-  color: white;
+.icon.is-youtube:hover {
   background: red;
+  color: white;
 }
 
 
 /* съедающиеся селекторы */
 
-.test{
+.test {
   font-size: 14px;
   line-height: 24px;
 }
 
-.boo,.far{
+.boo,
+.far {
   font-size: 55px;
 }
 
 /* размеры */
-.block{
+.block {
   width: 20px;
   height: 40px;
 }
