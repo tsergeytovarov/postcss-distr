@@ -27,4 +27,6 @@ module.exports = function(grunt) {
   });
 
   // базовый таск
-  grunt.registerTask('default', []);
+  grunt.registerTask('default', ['postcss']);
+
+}
