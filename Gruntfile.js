@@ -13,6 +13,7 @@ module.exports = function(grunt) {
 
   // обзываем автопрефиксер переменной
   var autoprefixer = require('autoprefixer-core');
+  var vars  = require('postcss-simple-vars')
 
   grunt.initConfig({
 
@@ -20,7 +21,8 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
-          autoprefixer({browsers: 'last 10 version'}).postcss //вызов автопрефиксера над css файлом
+          autoprefixer({browsers: 'last 10 version'}).postcss, //вызов автопрефиксера над css файлом
+          vars.postcss
         ]
       },
       dist: {
