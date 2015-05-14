@@ -22,6 +22,7 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
+          require('postcss-mixins').postcss, // миксины
           require('postcss-conditionals').postcss, // условия
           require('postcss-for').postcss, // циклы
           require('postcss-simple-vars').postcss, //переменные
