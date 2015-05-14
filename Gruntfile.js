@@ -22,6 +22,7 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
+          require("postcss-import").postcss, // импорты файлов
           require('postcss-mixins').postcss, // миксины
           require('postcss-conditionals').postcss, // условия
           require('postcss-for').postcss, // циклы
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
         ]
       },
       dist: {
-        src: 'src/css/*.css'
+        src: 'src/css/style.css'
       }
     }
 

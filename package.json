@@ -12,6 +12,7 @@
     "postcss-nested": "~0.3.1",
     "postcss-for": "~1.0.1",
     "postcss-conditionals": "~1.0",
-    "postcss-mixins": "0.3"
+    "postcss-mixins": "~0.3",
+    "postcss-import": "~5.2.2"
   }
 }
