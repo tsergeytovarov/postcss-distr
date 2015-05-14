@@ -18,3 +18,15 @@ body{
     font-weight: 400;
   }
 }
+
+
+/* условия */
+
+.foo {
+  @if 3 < 5 {
+    background: green;
+  }
+  @else {
+    background: blue;
+  }
+}

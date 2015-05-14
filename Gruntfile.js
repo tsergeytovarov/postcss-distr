@@ -22,6 +22,7 @@ module.exports = function(grunt) {
       options: {
         map: true,
         processors: [
+          require('postcss-conditionals').postcss, // условия
           require('postcss-for').postcss, // циклы
           require('postcss-simple-vars').postcss, //переменные
           require('postcss-nested').postcss, // вложенности
