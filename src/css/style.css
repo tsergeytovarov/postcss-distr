@@ -5,3 +5,16 @@ body{
   box-sizing: border-box;
   width: $width;
 }
+
+/* циклы */
+@for $in from 1 to 3 {
+    .b-$in { width: $in; }
+}
+
+/* вложенности */
+
+.post{
+  .blog{
+    font-weight: 400;
+  }
+}
