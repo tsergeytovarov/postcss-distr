@@ -1,5 +1,7 @@
 /*
-  Author - Sergey Popov.
+  Author: Sergey Popov.
+  Version: 1.0.
+  Last version date: 15.05.2015.
   Author URI: http://ourworkspace.ru
   Author social: https://vk.com/sergeytovarov
   Author email: tovarov.piter@gmail.com
