@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     // постпроцессор
     postcss: {
       options: {
-        map: true,
+        map: false,
         processors: [
           require('postcss-size').postcss, // функция для размеров
           require("postcss-import").postcss, // импорты файлов
