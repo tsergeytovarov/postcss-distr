@@ -1,0 +1,68 @@
+@import "__mixins.css";
+
+/* переменные */
+$width: 200px;
+
+.container{
+  box-sizing: border-box;
+  width: $width;
+  margin: 0 auto;
+  padding: 100px;
+  background: #000;
+}
+
+/* циклы */
+@for $in from 1 to 3 {
+    .b-$in { width: $in; }
+}
+
+/* вложенности */
+
+.post{
+  .blog{
+    font-weight: 400;
+  }
+}
+
+/* условия */
+
+.foo {
+  @if 3 < 5 {
+    background: green;
+  }
+  @else {
+    background: blue;
+  }
+}
+
+/* миксины */
+@mixin icon twitter {
+    background: url(twt.png);
+}
+@mixin icon youtube, red {
+    background: url(youtube.png);
+}
+
+
+/* съедающиеся селекторы */
+
+.test{
+  font-size: 14px;
+}
+
+.test{
+  line-height: 24px;
+}
+
+.boo{
+  font-size: 55px;
+}
+
+.far{
+  font-size: 55px;
+}
+
+/* размеры */
+.block{
+  size: 20px 40px;
+}
