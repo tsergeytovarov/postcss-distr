@@ -33,7 +33,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'src/css/style.css': 'src/css/postcss/style.css'
+           'src/css/style.css': 'src/css/postcss/style.css'
         }
       }
     },
@@ -72,17 +72,17 @@ module.exports = function(grunt) {
     },
 
     // оптимизация графики
-    imagemin: {
-      build: {
-        options: {
-          optimizationLevel: 3
-        },
-        files: [{
-          expand: true,
-          src: ['build/img/*.{png,jpg,gif,svg}']
-        }]
-      }
-    },
+    // imagemin: {
+    //   build: {
+    //     options: {
+    //       optimizationLevel: 3
+    //     },
+    //     files: [{
+    //       expand: true,
+    //       src: ['build/img/*.{png,jpg,gif,svg}']
+    //     }]
+    //   }
+    // },
 
     // очистка дирректории
     clean: {
@@ -203,7 +203,7 @@ module.exports = function(grunt) {
      'copy:html',
      'copy:img',
      'copy:fonts',
-     'imagemin',
+    //  'imagemin',
      'browserSync',
      'watch'
    ]);
@@ -220,7 +220,7 @@ module.exports = function(grunt) {
      'copy:html',
      'copy:img',
      'copy:fonts',
-     'imagemin',
+    //  'imagemin',
    ]);
 
    // только js
@@ -240,7 +240,7 @@ module.exports = function(grunt) {
    // только картики и стили
    grunt.registerTask('img', [
      'copy:img',
-     'imagemin',
+    //  'imagemin',
      'postcss'
    ]);
 
