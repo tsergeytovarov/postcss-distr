@@ -1,6 +1,6 @@
 /*
   Author: Sergey Popov.
-  Version: 1.0.
+  Version: 1.1.
   Last version date: 15.05.2015.
   Author URI: http://ourworkspace.ru
   Author social: https://vk.com/sergeytovarov
@@ -27,7 +27,6 @@ module.exports = function(grunt) {
           require('postcss-for').postcss, // циклы
           require('postcss-simple-vars').postcss, //переменные
           require('postcss-nested').postcss, // вложенности
-          require('postcss-merge-rules').postcss, // собирает и склеивает свойства в селекторы и селекторы с дубликатоми слоёв
           require('autoprefixer-core')({browsers: 'last 10 version'}).postcss //вызов автопрефиксера над css файлом
         ]
       },
