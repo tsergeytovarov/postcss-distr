@@ -1,13 +1,13 @@
 input[type='text'],
 textarea,
 select,
-input[type='password']{ /* поля */
+input[type='password']{
   box-sizing: border-box;
   outline: none;
   width: 100%;
   font-size: 18px;
   line-height: 20px;
-  font-family: 'Gotham', sans-serif;
+  font-family: 'Arial', sans-serif;
 
   &:focus{
 
@@ -24,9 +24,6 @@ button{
 }
 
 input::-webkit-input-placeholder{
-
-}
-input::-moz-placeholde{
 
 }
 

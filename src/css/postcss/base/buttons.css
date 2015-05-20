@@ -16,11 +16,11 @@
   }
 
   &:active,
-  &__active{
+  &--active{
 
   }
 
-  &__modify{
+  &--modify{
 
     &:hover,
     &--hover{
